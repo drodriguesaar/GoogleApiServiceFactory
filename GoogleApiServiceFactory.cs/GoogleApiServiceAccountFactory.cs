@@ -3,16 +3,12 @@ using Google.Apis.Json;
 using Google.Apis.Services;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
-using System.Threading;
 
 namespace GoogleApiServiceFactory
 {
-    /// <summary>
-    /// Used to create authenticated google service accounts, both with .json or .p12 certificates.
-    /// </summary>
+
     public class GoogleApiServiceAccountFactory
     {
         public string GoogleServiceApplicationName { get; set; }
@@ -21,21 +17,23 @@ namespace GoogleApiServiceFactory
         public string GoogleServiceAccountEmail { get; set; }
 
         /// <summary>
-        /// Property used to define if the authentication will be made using a .json file or .p12 file.
+        /// Property used to define if the service account credential will be created using .json or .p12 certificates.
         /// </summary>
         public bool IsJSON { get; set; }
-
+        /// <summary>
+        /// Used to create a authenticated google service account.
+        /// </summary>
         public GoogleApiServiceAccountFactory()
         {
             IsJSON = true;
         }
 
         /// <summary>
-        /// Generate a new instance of a authenticated google service account.
+        /// Creates a new instance of a google api service class using service authentication.
         /// </summary>
-        /// <typeparam name="T">Instance of a Google Service, ex: GmailService, DirectoryService e etc.</typeparam>
-        /// <param name="scopes">Scope list</param>
-        /// <returns>The authenticated google service account instance.</returns>
+        /// <typeparam name="T">Type T of a google api service class, ex: GmailService, DirectoryService e etc.</typeparam>
+        /// <param name="scopes">Scope list to authorize</param>
+        /// <returns>The service authenticated google api service class instance.</returns>
         public T GetService<T>(IEnumerable<string> scopes)
         {
             var credential = GetServiceAccountCredential(scopes);
@@ -48,12 +46,12 @@ namespace GoogleApiServiceFactory
             return (T)Activator.CreateInstance(typeof(T), new object[] { baseClientService });
         }
         /// <summary>
-        /// Generate a new instance of a authenticated google service account impersonating a user.
+        /// Creates a new instance of a google api service class using service authentication.
         /// </summary>
-        /// <typeparam name="T">Instance of a Google Service, ex: GmailService, DirectoryService e etc.</typeparam>
-        /// <param name="scopes">Scope list</param>
+        /// <typeparam name="T">Type T of a google api service class, ex: GmailService, DirectoryService e etc.</typeparam>
+        /// <param name="scopes">Scope list to authorize</param>
         /// <param name="userToImpersonate">User to impersonate to access resources like Calendar, Gmail e etc.</param>
-        /// <returns>The impersonated and authenticated google service account instance.</returns>
+        /// <returns>The user impersonated and service authenticated google api service class instance.</returns>
         public T GetService<T>(IEnumerable<string> scopes, string userToImpersonate)
         {
             var credential = GetServiceAccountCredential(scopes, userToImpersonate: userToImpersonate);

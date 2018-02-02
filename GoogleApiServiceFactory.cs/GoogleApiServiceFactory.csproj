@@ -7,8 +7,8 @@
     <ProjectGuid>{18C5A396-3635-4B21-8A36-18B8CF739C2A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GoogleApiServiceFactory.cs</RootNamespace>
-    <AssemblyName>GoogleApiServiceFactory.cs</AssemblyName>
+    <RootNamespace>GoogleApiServiceFactory</RootNamespace>
+    <AssemblyName>GoogleApiServiceFactory</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
