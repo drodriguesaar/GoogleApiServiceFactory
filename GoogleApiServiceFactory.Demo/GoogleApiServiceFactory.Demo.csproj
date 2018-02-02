@@ -87,9 +87,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GoogleApiServiceFactory.cs\GoogleApiServiceFactory.cs.csproj">
+    <ProjectReference Include="..\GoogleApiServiceFactory.cs\GoogleApiServiceFactory.csproj">
       <Project>{18c5a396-3635-4b21-8a36-18b8cf739c2a}</Project>
-      <Name>GoogleApiServiceFactory.cs</Name>
+      <Name>GoogleApiServiceFactory</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

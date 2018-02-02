@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleApiServiceFactory.Demo", "GoogleApiServiceFactory.Demo\GoogleApiServiceFactory.Demo.csproj", "{02238095-B549-4AC3-AF04-A439674E0D35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleApiServiceFactory.cs", "GoogleApiServiceFactory.cs\GoogleApiServiceFactory.cs.csproj", "{18C5A396-3635-4B21-8A36-18B8CF739C2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleApiServiceFactory", "GoogleApiServiceFactory.cs\GoogleApiServiceFactory.csproj", "{18C5A396-3635-4B21-8A36-18B8CF739C2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
