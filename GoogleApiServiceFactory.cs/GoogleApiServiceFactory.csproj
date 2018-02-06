@@ -75,7 +75,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GoogleApiServiceAccountFactory.cs" />
+    <Compile Include="CredentialTypesEnum.cs" />
+    <Compile Include="GoogleApiServiceFactory.cs" />
+    <Compile Include="GoogleJSONServiceAccountCredential.cs" />
+    <Compile Include="GoogleNullServiceAccountCredential.cs" />
+    <Compile Include="GoogleP12ServiceAccountCredential.cs" />
+    <Compile Include="GoogleServiceAccountCredentialFactory.cs" />
+    <Compile Include="GoogleServiceParameter.cs" />
+    <Compile Include="IGoogleServiceAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
