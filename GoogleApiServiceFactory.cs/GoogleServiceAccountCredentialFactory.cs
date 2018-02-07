@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace GoogleApiServiceFactory
 {
-    public static class GoogleServiceAccountCredentialFactory
+    internal static class GoogleServiceAccountCredentialFactory
     {
-
         public static IGoogleServiceAccount GetGoogleServiceAccountCredential(CredentialTypeEnum credentialType)
         {
             switch (credentialType)

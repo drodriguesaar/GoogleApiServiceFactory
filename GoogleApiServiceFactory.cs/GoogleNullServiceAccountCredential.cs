@@ -7,7 +7,7 @@ using Google.Apis.Auth.OAuth2;
 
 namespace GoogleApiServiceFactory
 {
-    public class GoogleNullServiceAccountCredential : IGoogleServiceAccount
+    internal class GoogleNullServiceAccountCredential : IGoogleServiceAccount
     {
         public ServiceAccountCredential BuildCredential(GoogleServiceParameter parameters)
         {

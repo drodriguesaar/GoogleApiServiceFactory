@@ -9,7 +9,7 @@ using Google.Apis.Json;
 
 namespace GoogleApiServiceFactory
 {
-    public class GoogleJSONServiceAccountCredential : IGoogleServiceAccount
+    internal class GoogleJSONServiceAccountCredential : IGoogleServiceAccount
     {
         public ServiceAccountCredential BuildCredential(GoogleServiceParameter parameters)
         {
