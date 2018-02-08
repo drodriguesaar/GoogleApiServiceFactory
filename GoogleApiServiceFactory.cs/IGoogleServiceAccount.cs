@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GoogleApiServiceFactory
 {
-    public interface IGoogleServiceAccount
+    internal interface IGoogleServiceAccount
     {
         ServiceAccountCredential BuildCredential(GoogleServiceParameter parameters);
     }
