@@ -1,10 +1,6 @@
 ﻿using Google.Apis.Auth.OAuth2;
-using Google.Apis.Json;
 using Google.Apis.Services;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Security.Cryptography.X509Certificates;
 
 namespace GoogleApiServiceFactory
 {
