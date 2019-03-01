@@ -1,0 +1,4 @@
+This project was created to aid fellow C# developers to integrate their systems with the Google Cloud Platform. Using the flexibility of
+the generic types, I've created an solution to make these integrations more friendly.
+
+Feel free to play and test!
