@@ -26,7 +26,7 @@ namespace GoogleApiServiceFactory.Demo
         static void ConnectDirectoryService()
         {
             Console.WriteLine("*********************BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEPP***********************");
-            Console.WriteLine("******************************Google Service Bot*********************************");
+            Console.WriteLine("******************************Starting Google Service Bot*********************************");
 
             var gApiServiceFactory = new GoogleServiceFactory();
             
